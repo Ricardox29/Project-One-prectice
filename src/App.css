@@ -1,7 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+*{
+  padding: 0;
+}
+
+:root{
+  --red: #d01c28;
+  --gray: #2e2e2e;
+  --black: #000;
+  --pink: #fbe0e1;
+}
+
 body{
   font-family:  "Poppins", sans-serif;
+}
+
+button{
+  all: unset;
+  padding: 6px 16px;
+  background: var(--red);
+  height: 32px;
+  color:  white;
+  font-weight:  500px;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1280px;
 }
 
 nav{
@@ -9,4 +39,79 @@ nav{
   justify-content: space-between;
   max-width: 1024px;
   margin: 0 auto;
+
+
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  gap: 20px;
+}
+
+nav ul:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 72px);
+}
+
+.hero .hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.hero h1 {
+  font-weight: 800;
+  line-height: 102px;
+  font-size: 108px;
+  margin: 0;
+}
+
+.hero p {
+  font-weight: 600;
+  color: var(--gray);
+  margin: 0;
+  max-width: 400px;
+}
+
+.hero .hero-btn button {
+  font-size: 24px;
+}
+
+.hero .hero-btn {
+  display: flex;
+  gap: 40px;
+  transition: 0.3s;
+}
+
+.hero .secundary-btn {
+  border: 2px solid var(--gray);
+  color: var(--gray);
+  background: transparent;
+}
+
+.hero .shopping {
+  font-weight: 14px;
+  margin-bottom: 8px;
+}
+
+.hero .brand-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.hero .brand-icons .flipkart{
+  max-width: 30px;
+}
+
+.hero .brand-icons .amazon{
+  max-width: 25px;
 }

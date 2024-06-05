@@ -1,24 +1,14 @@
 import './App.css'
+import HeroSection from './components/Hero';
+import Navegation  from './components/Navegation';
 
   const App = () => {
   return (
     <div>
-      <nav>
-        <div>
-          <img src=".\src\Imagenes\LogoNike.png" alt="Logo Nike" style={{ width: '300px', height: 'auto' }} />
-        </div>
-
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Location</a></li>
-          <li><a href="">Abaot</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-
-      <button>Login</button>
-      </nav>
+      <Navegation />
+      <HeroSection />
     </div> 
   );
 };
 
-export default App
+export default App;
