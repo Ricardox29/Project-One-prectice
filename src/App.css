@@ -51,11 +51,6 @@ nav ul{
   gap: 20px;
 }
 
-nav ul:hover {
-  transform: scale(1.1);
-  transition: 0.2s;
-}
-
 .hero {
   display: flex;
   align-items: center;
